@@ -1,0 +1,47 @@
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 40px 120px;
+    color: white;
+}
+
+.nav-logo {
+    font-size: 42px;
+    font-weight: 600;
+}
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    font-size: 18px;
+    gap: 90px; /* Ensure this gap suits your design */
+}
+
+.nav-menu .nav-contact {
+    border-radius: 50px;
+    padding: 10px 38px;
+    background: rgb(255, 255, 255);
+    color: #262626;
+    text-decoration: none; /* Ensure this for button-like appearance */
+}
+
+/* Add media query for responsiveness */
+@media (max-width: 768px) {
+    .nav {
+        margin: 20px 40px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-menu {
+        flex-direction: column;
+        gap: 20px; /* Adjust gap for smaller screens */
+        margin-top: 20px;
+    }
+    
+    .nav-menu .nav-contact {
+        padding: 8px 24px; /* Adjust padding for smaller screens */
+    }
+}
